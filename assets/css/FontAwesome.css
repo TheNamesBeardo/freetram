@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'FontAwesome';
+	src: url(../../assets/fonts/FontAwesome.woff2) format('woff2'),
+	url(../../assets/fonts/FontAwesome.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

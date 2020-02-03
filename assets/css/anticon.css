@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'anticon';
+	src: url(../../assets/fonts/anticon.woff2) format('woff2'),
+	url(../../assets/fonts/anticon.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

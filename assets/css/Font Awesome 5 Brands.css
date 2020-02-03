@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'Font Awesome 5 Brands';
+	src: url(../../assets/fonts/FontAwesome5BrandsRegular.woff2) format('woff2'),
+	url(../../assets/fonts/FontAwesome5BrandsRegular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Font Awesome 5 Brands';
+	src: url(../../assets/fonts/FontAwesome5Brands-Regular.woff2) format('woff2'),
+	url(../../assets/fonts/FontAwesome5Brands-Regular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

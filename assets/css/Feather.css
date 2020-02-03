@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Feather';
+	src: url(../../assets/fonts/Feather.woff2) format('woff2'),
+	url(../../assets/fonts/Feather.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

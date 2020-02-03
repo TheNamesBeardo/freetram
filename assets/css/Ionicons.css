@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Ionicons';
+	src: url(../../assets/fonts/Ionicons.woff2) format('woff2'),
+	url(../../assets/fonts/Ionicons.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Font Awesome 5 Free';
+	src: url(../../assets/fonts/FontAwesome5Free-Regular.woff2) format('woff2'),
+	url(../../assets/fonts/FontAwesome5Free-Regular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
