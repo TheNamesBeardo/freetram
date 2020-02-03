@@ -92,44 +92,9 @@ GetClock();
 setInterval(GetClock,1000);
 </script>
 
-            <h1 style="font-size: 12px;font-weight: 300;font-family: 'Azo Sans';">Valid until:</h1>
-            <section style="padding-top: 0;border-radius: 20px;background: #012B29;padding-bottom: 0;width: 100%;height: 4.9vh;"><h1 id='tomoz' style="font-size: 14px;color: rgb(255,255,255);text-align: center;padding-top: 4.5%;font-family: 'Azo Sans';">Sun 2nd Feb 2020 02:00:00</h1>
+                <h1 style="font-size: 14px;font-weight: 300;font-family: 'Azo Sans';">Valid until:</h1>
+                <section style="padding-top: 0;border-radius: 20px;background: #012B29;padding-bottom: 0;width: 100%;height: 4.9vh;"><h1 id='tomoz' style="font-size: 15px;color: rgb(255,255,255);text-align: center;padding-top: 4.5%;font-family: 'Azo Sans';">Sun 2nd Feb 2020 02:00:00</h1>
 <script>
-window.addEventListener('beforeinstallprompt', (event) => {
-  console.log('👍', 'beforeinstallprompt', event);
-  // Stash the event so it can be triggered later.
-  window.deferredPrompt = event;
-  // Remove the 'hidden' class from the install button container
-  divInstall.classList.toggle('hidden', false);
-});
-    
-butInstall.addEventListener('click', () => {
-  console.log('👍', 'butInstall-clicked');
-  const promptEvent = window.deferredPrompt
-  if (!promptEvent) {
-    // The deferred prompt isn't available.
-    return;
-  }
-  // Show the install prompt.
-  promptEvent.prompt();
-  // Log the result
-  promptEvent.userChoice.then((result) => {
-    console.log('👍', 'userChoice', result);
-    // Reset the deferred prompt variable, since 
-    // prompt() can only be called once.
-    window.deferredPrompt = null;
-    // Hide the install button.
-    divInstall.classList.toggle('hidden', true);
-  });
-});
-    
-    
-window.addEventListener('appinstalled', (event) => {
-  console.log('👍', 'appinstalled', event);
-});
-    
-    
-    
 function GetClock(){
 const nth = function(d) {
   if (d > 3 && d < 21) return 'th';
@@ -151,18 +116,19 @@ document.getElementById("tomoz").innerHTML = `${day} ${date}${nth(date)} ${month
 GetClock();
 setInterval(GetClock,1000);
 </script></section>
-            <h1 style="font-size: 12px;font-family: 'Azo Sans';font-weight: 300;text-align: center;margin-top: 12%;">Multiple and group ticket holders must travel together</h1>
-        </section>
-        </div>
-        <div class="container" style="height: 5.22vh;background-color: #ffffff;width: 82%;border-right: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;"><img src="assets/img/images_tram.png" style="margin-left: auto;margin-right: auto;display: block;width: 70%;padding-bottom: 1%;padding-top: 8%;"></div>
-        <div class="container" style="height: 0.98vh;background-color: #012b29;width: 83%;border-right: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;">
-            <div></div>
-        </div>
-        <div class="container" style="padding-top: 0;border-radius: 0px 0px 10px 10px;background: #ffffff;padding-bottom: 0;width: 82.45%;height: 2.28vh;border: 1px solid #d4d4d4;">
-            <div></div>
-        </div>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+                <h1 style="font-size: 14px;font-family: 'Azo Sans';font-weight: 300;text-align: center;margin-top: 12%;">Multiple and group ticket holders must travel together</h1>
+            </section>
+            </div>
+            <div class="container" style="height: 5.22vh;background-color: #ffffff;width: 82%;border-right: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;"><img src="assets/img/images_tram.png" style="margin-left: auto;margin-right: auto;display: block;width: 70%;padding-bottom: 1%;padding-top: 8%;"></div>
+            <div class="container" style="height: 0.98vh;background-color: #012b29;width: 82%;border-right: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;">
+                <div></div>
+            </div>
+            <div class="container" style="padding-top: 0;border-radius: 0px 0px 10px 10px;background: #ffffff;padding-bottom: 0;width: 82.45%;height: 2.28vh;border: 1px solid #d4d4d4;">
+                <div></div>
+            </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
