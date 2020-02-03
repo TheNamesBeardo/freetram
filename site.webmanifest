@@ -1,8 +1,6 @@
 {
     "name": "FreeTram",
     "short_name": "FreeTram",
-    "scope" : "./",
-    "start_url": ".",
     "icons": [
         {
             "src": "/android-chrome-144x144.png",
