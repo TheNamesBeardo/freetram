@@ -2,7 +2,6 @@
   "name": "Free Tram",
   "short_name": "Tram",
   "start_url": ".",
-  "display": "standalone",
   "description": "Free tram BABY",
   "icons": [
   {
