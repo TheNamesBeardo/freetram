@@ -85,6 +85,7 @@ const hour = today.getHours();
 const min = today.getMinutes();
 const sec = today.getSeconds();
 if(min<=9) min="0"+min
+if(sec<=9) sec="0"+sec
 
 document.getElementById("date").innerHTML = `${day} ${date}${nth(date)} ${month} ${today.getFullYear()} ${hour}:${min}:${sec}`;
 }
