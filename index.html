@@ -106,7 +106,7 @@ const nth = function(d) {
   }
 }
 const today = new Date();
-if((today.getHours() < 23)&&(today.getHours() > 2)) today.setDate(today.getDate() + 1)
+if((today.getHours() <= 23)&&(today.getHours() > 2)) today.setDate(today.getDate() + 1)
 const date = today.getDate();
 const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][today.getDay()];
 const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"][today.getMonth()];
