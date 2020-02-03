@@ -95,7 +95,7 @@ setInterval(GetClock,1000);
                 <h1 style="font-size: 14px;font-weight: 300;font-family: 'Azo Sans';">Valid until:</h1>
                 <section style="padding-top: 0;border-radius: 20px;background: #012B29;padding-bottom: 0;width: 100%;height: 4.9vh;"><h1 id='tomoz' style="font-size: 15px;color: rgb(255,255,255);text-align: center;padding-top: 4.5%;font-family: 'Azo Sans';">Sun 2nd Feb 2020 02:00:00</h1>
 <script>
-function clock(){
+function GetClock(){
 const nth = function(d) {
   if (d > 3 && d < 21) return 'th';
   switch (d % 10) {
@@ -105,8 +105,8 @@ const nth = function(d) {
     default: return "th";
   }
 }
-var today = new Date();
-if((today.getHours() > 2)&&(today.getHours() < 24)) today.setDate(today.getDate() + 1)
+const today = new Date();
+if((today.getHours() < 23)&&(today.getHours() > 2)) today.setDate(today.getDate() + 1)
 const date = today.getDate();
 const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][today.getDay()];
 const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"][today.getMonth()];
@@ -115,8 +115,6 @@ document.getElementById("tomoz").innerHTML = `${day} ${date}${nth(date)} ${month
 }
 GetClock();
 setInterval(GetClock,1000);
-Clock();
-setInterval(Clock,1000);
 </script></section>
                 <h1 style="font-size: 14px;font-family: 'Azo Sans';font-weight: 300;text-align: center;margin-top: 12%;">Multiple and group ticket holders must travel together</h1>
             </section>
