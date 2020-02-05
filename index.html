@@ -80,7 +80,7 @@ const today = new Date();
 const date = today.getDate();
 const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][today.getDay()];
 const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"][today.getMonth()];
-const hour = today.getHours();
+var hour = today.getHours();
 var min = today.getMinutes();
 var sec = today.getSeconds();
 if(hour<=9) hour="0"+hour
